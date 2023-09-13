@@ -1,12 +1,13 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.15;
 
-import {Test, console2} from "forge-std/Test.sol";
-import {MerkleTree, MerkleProof} from "../contracts/MerkleTree.sol";
+import { Test } from "forge-std/Test.sol";
+import { MerkleTree, MerkleProof } from "../contracts/MerkleTree.sol";
 
 contract MerkleTreeTest is Test {
-    bytes32[] LEAVES;
-    MerkleProof proof;
+    // solhint-disable-next-line var-name-mixedcase
+    bytes32[] private LEAVES;
+    MerkleProof public proof;
 
     function setUp() public {
         LEAVES = new bytes32[](5);
@@ -37,5 +38,4 @@ contract MerkleTreeTest is Test {
         bytes32 zero = bytes32(uint256(0));
         assertFalse(proof.verify(LEAVES, zero));
     }
-
 }
