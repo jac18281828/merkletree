@@ -1,6 +1,6 @@
 {
     "name": "MerkleTree",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Merkle Tree Solidity Example",
     "main": "index.js",
     "directories": {
@@ -19,7 +19,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jac18281828/FocusNFT.git"
+        "url": "git+https://github.com/jac18281828/merkletree.git"
     },
     "devDependencies": {
         "solhint": "3.6.2"
