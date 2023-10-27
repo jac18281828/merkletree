@@ -5,7 +5,7 @@ pragma solidity ^0.8.15;
 library MerkleTree {
     error EmptyTree();
 
-    bytes32 public constant ZERO_BLOCK = keccak256(abi.encode(uint256(0)));
+    bytes32 public constant ZERO_BLOCK = keccak256(abi.encode(0));
 
     /**
      * @dev build a merkle tree from a list of leaves
