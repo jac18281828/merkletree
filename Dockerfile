@@ -9,5 +9,5 @@ USER xmtp
 ENV PATH=${PATH}:~/.cargo/bin
 RUN yarn install --frozen-lockfile
 RUN yarn prettier:check
-RUN yarn hint
+RUN yarn lint
 RUN forge test -vvv
